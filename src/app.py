@@ -6,9 +6,9 @@ app=Flask(__name__)
 def index():
     return "Hello, World!"
 
-@app.route("/wassim")
+@app.route("/reader")
 def main():
-    return "Hello, Wassim!"
+    return "Hello, Dear Reader!"
     
 if __name__ == "__main__":
    app.run()
