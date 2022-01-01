@@ -73,4 +73,16 @@ We added a new project called to-production and warm-raches-43058 as its staging
 
 ![](images/to-production.png)
 
-Let's try to create a pull request via editing our app.py and change the api to reader!
+Let's try to create a pull request via editing our app.py and change the api to reader! 
+
+We can before merging our request, by enabling the review option, we can oversee the impact of the changed code on the codebase line then decide if the changes are worth or not.
+The following screenshot show the pull request execution
+![](images/pull-requestWorkflow.png)
+
+After merging the request, the ci/Cd pipeline in the github using actions will do its work.
+
+After that, we can promote the staging code to the production one manually just by a click and a new version will be released
+![](images/promote.png)
+
+We obtain the production code on the following URL: 
+**https://production-python.herokuapp.com/**
