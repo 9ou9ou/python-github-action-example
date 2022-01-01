@@ -5,6 +5,10 @@ app=Flask(__name__)
 @app.route("/")
 def index():
     return "Hello, World!"
+
+@app.route("/wassim")
+def index():
+    return "Hello, Wassim!"
     
 if __name__ == "__main__":
    app.run()
